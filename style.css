@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+  background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form Container */
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Steps */
+.step {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Progress Bar */
+.progress {
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.progress-bar {
+  background-color: #198754;
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Inputs & Labels */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #198754;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-next {
+  background-color: #198754;
+  color: white;
+}
+
+.btn-prev {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Confirmation message */
+.success-message {
+  text-align: center;
+  padding: 30px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 10px;
+  color: #155724;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
